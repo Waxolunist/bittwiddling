@@ -19,22 +19,17 @@
         
 package com.vcollaborate.math;
 
-import com.google.common.math.BigIntegerMath;
+import static org.junit.Assert.assertEquals;
 
-public final class CombinatoricUtils {
+import org.junit.Test;
 
-  private CombinatoricUtils() {
+public class CombinatoricUtilsTest {
+
+  @Test
+  public void testCombinations() {
+    assertEquals(10, CombinatoricUtils.combinations(5, 3));
+    assertEquals(120, CombinatoricUtils.combinations(10, 3));
+    assertEquals(10, CombinatoricUtils.combinations(10, 1));
   }
 
-  /**
-   * Calculates the possible combinations of chosen types (r) from a list of types (n) or n over r.
-   * <p>
-   * Mathematical it is following formula: <br>
-   * \(\binom{n}{r} = \frac{n!}{r!(n-r)!}\)
-   */
-  public static final long combinations(final int n, final int r) {
-    return BigIntegerMath.factorial(n)
-        .divide(BigIntegerMath.factorial(r).multiply(BigIntegerMath.factorial(n - r)))
-        .longValue();
-  }
 }

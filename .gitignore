@@ -1,11 +1,8 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-.settings
-.project
-.classpath
 target
+.classpath
+.project
+.settings
+.externalToolBuilders
+release.properties
+*.releaseBackup
+.checkstyle
