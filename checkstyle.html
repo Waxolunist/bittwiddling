@@ -7,10 +7,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Christian Sterzl" />
     <meta name="Date-Revision-yyyymmdd" content="20150305" />
     <meta http-equiv="Content-Language" content="en" />
-    <title>Bit Twiddling Hacks &#x2013; Bit Twiddling Hacks</title>
+    <title>Bit Twiddling Hacks &#x2013; Checkstyle Results</title>
     <link rel="stylesheet" href="./css/apache-maven-fluido-1.3.1.min.css" />
     <link rel="stylesheet" href="./css/site.css" />
     <link rel="stylesheet" href="./css/print.css" media="print" />
@@ -19,7 +18,7 @@
     <script type="text/javascript" src="./js/apache-maven-fluido-1.3.1.min.js"></script>
 
     
-    <meta name="keyword" content="bit, java, hacks" />              </head>
+                  </head>
         <body class="topBarDisabled">
           
     
@@ -72,10 +71,12 @@
                 <ul class="nav nav-list">
                     <li class="nav-header">Overview</li>
                               
-      <li class="active">
+      <li>
   
-            <a href="#"><i class="none"></i>Introduction</a>
-          </li>
+                          <a href="index.html" title="Introduction">
+          <i class="none"></i>
+        Introduction</a>
+            </li>
                 
       <li>
   
@@ -99,104 +100,76 @@
         Maven</a>
             </li>
                                         <li class="nav-header">Project Documentation</li>
-                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                      
       <li>
   
                           <a href="project-info.html" title="Project Information">
-          <i class="icon-chevron-down"></i>
+          <i class="icon-chevron-right"></i>
         Project Information</a>
+                  </li>
+                                                                                                                                                                                                          
+      <li>
+  
+                          <a href="project-reports.html" title="Project Reports">
+          <i class="icon-chevron-down"></i>
+        Project Reports</a>
                     <ul class="nav nav-list">
                     
       <li>
   
-                          <a href="dependencies.html" title="Dependencies">
+                          <a href="apidocs/index.html" title="JavaDocs">
           <i class="none"></i>
-        Dependencies</a>
+        JavaDocs</a>
             </li>
                     
       <li>
   
-                          <a href="dependency-info.html" title="Dependency Information">
+                          <a href="testapidocs/index.html" title="Test JavaDocs">
           <i class="none"></i>
-        Dependency Information</a>
+        Test JavaDocs</a>
             </li>
                     
       <li>
   
-                          <a href="dependency-management.html" title="Dependency Management">
+                          <a href="surefire-report.html" title="Surefire Report">
           <i class="none"></i>
-        Dependency Management</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="distribution-management.html" title="Distribution Management">
-          <i class="none"></i>
-        Distribution Management</a>
+        Surefire Report</a>
             </li>
                     
       <li class="active">
   
-            <a href="#"><i class="none"></i>About</a>
+            <a href="#"><i class="none"></i>Checkstyle</a>
           </li>
                     
       <li>
   
-                          <a href="issue-tracking.html" title="Issue Tracking">
+                          <a href="cobertura/index.html" title="Cobertura Test Coverage">
           <i class="none"></i>
-        Issue Tracking</a>
+        Cobertura Test Coverage</a>
             </li>
                     
       <li>
   
-                          <a href="license.html" title="Project License">
+                          <a href="pmd.html" title="PMD">
           <i class="none"></i>
-        Project License</a>
+        PMD</a>
             </li>
                     
       <li>
   
-                          <a href="plugin-management.html" title="Plugin Management">
+                          <a href="xref/index.html" title="Source Xref">
           <i class="none"></i>
-        Plugin Management</a>
+        Source Xref</a>
             </li>
                     
       <li>
   
-                          <a href="plugins.html" title="Project Plugins">
+                          <a href="xref-test/index.html" title="Test Source Xref">
           <i class="none"></i>
-        Project Plugins</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="team-list.html" title="Project Team">
-          <i class="none"></i>
-        Project Team</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="source-repository.html" title="Source Repository">
-          <i class="none"></i>
-        Source Repository</a>
-            </li>
-                    
-      <li>
-  
-                          <a href="project-summary.html" title="Project Summary">
-          <i class="none"></i>
-        Project Summary</a>
+        Test Source Xref</a>
             </li>
               </ul>
         </li>
-                                                                                                                                                                                                
-      <li>
-  
-                          <a href="project-reports.html" title="Project Reports">
-          <i class="icon-chevron-right"></i>
-        Project Reports</a>
-                  </li>
             </ul>
                 
                     
@@ -224,42 +197,73 @@
                 
         <div id="bodyColumn"  class="span9" >
                                   
-            <!-- Copyright (C) 2012-2015 Christian Sterzl <christian.sterzl@gmail.com>
-
-    This file is part of Bittwiddling.
-
-    Bittwiddling is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    Bittwiddling is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with Bittwiddling.  If not, see <http://www.gnu.org/licenses/>. -->
-    
-        
+            <div class="section">
+<h2><a name="Checkstyle_Results"></a>Checkstyle Results</h2>
+<p>The following document contains the results of <a class="externalLink" href="http://checkstyle.sourceforge.net/">Checkstyle</a> 5.8 with checkstyle.xml ruleset.&#160;<a href="checkstyle.rss"><img alt="rss feed" src="images/rss.png" /></a></p></div>
 <div class="section">
-<h2><a name="About"></a>About</h2>
-        	
-<p>
-        	Java library for bit twiddling, mainly inspired by <a class="externalLink" href="http://graphics.stanford.edu/~seander/bithacks.html">Java library for bit twiddling, mainly inspired by http://graphics.stanford.edu/~seander/bithacks.html</a>.
-        	</p>
-        </div>
-        
+<h2><a name="Summary"></a>Summary</h2>
+<table border="0" class="table table-striped">
+<tr class="a">
+<th>Files</th>
+<th><img src="images/icon_info_sml.gif" alt="" />&#160;Info</th>
+<th><img src="images/icon_warning_sml.gif" alt="" />&#160;Warnings</th>
+<th><img src="images/icon_error_sml.gif" alt="" />&#160;Errors</th></tr>
+<tr class="b">
+<td>3</td>
+<td>0</td>
+<td>2</td>
+<td>0</td></tr></table></div>
 <div class="section">
-<h2><a name="New_Hacks"></a>New Hacks</h2>
-        	
-<p>
-        	If you need more features or see any bugs please report them at the github page 
-        	<a class="externalLink" href="https://github.com/Waxolunist/bittwiddling/issues">https://github.com/Waxolunist/bittwiddling/issues</a>.
-        	</p>
-        </div>
-    
-
+<h2><a name="Files"></a>Files</h2>
+<table border="0" class="table table-striped">
+<tr class="a">
+<th>File</th>
+<th><img src="images/icon_info_sml.gif" alt="" />&#160;I</th>
+<th><img src="images/icon_warning_sml.gif" alt="" />&#160;W</th>
+<th><img src="images/icon_error_sml.gif" alt="" />&#160;E</th></tr>
+<tr class="b">
+<td><a href="#com.vcollaborate.math.CombinatoricUtils.java">com/vcollaborate/math/CombinatoricUtils.java</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td></tr></table></div>
+<div class="section">
+<h2><a name="Rules"></a>Rules</h2>
+<table border="0" class="table table-striped">
+<tr class="a">
+<th>Category</th>
+<th>Rule</th>
+<th>Violations</th>
+<th>Severity</th></tr>
+<tr class="b">
+<td>naming</td>
+<td><a class="externalLink" href="http://checkstyle.sourceforge.net/config_naming.html#ParameterName">ParameterName</a>
+<ul>
+<li>format: <tt>&quot;^[a-z][a-z0-9][a-zA-Z0-9]*$&quot;</tt></li></ul></td>
+<td>2</td>
+<td><img src="images/icon_warning_sml.gif" alt="" />&#160;Warning</td></tr></table></div>
+<div class="section">
+<h2><a name="Details"></a>Details</h2>
+<div class="section">
+<h3 id="com.vcollaborate.math.CombinatoricUtils.java">com/vcollaborate/math/CombinatoricUtils.java</h3>
+<table border="0" class="table table-striped">
+<tr class="a">
+<th>Severity</th>
+<th>Category</th>
+<th>Rule</th>
+<th>Message</th>
+<th>Line</th></tr>
+<tr class="b">
+<td><img src="images/icon_warning_sml.gif" alt="" />&#160;Warning</td>
+<td>naming</td>
+<td>ParameterName</td>
+<td>Parameter name 'n' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.</td>
+<td><a href="./xref/com/vcollaborate/math/CombinatoricUtils.html#L35">35</a></td></tr>
+<tr class="a">
+<td><img src="images/icon_warning_sml.gif" alt="" />&#160;Warning</td>
+<td>naming</td>
+<td>ParameterName</td>
+<td>Parameter name 'r' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.</td>
+<td><a href="./xref/com/vcollaborate/math/CombinatoricUtils.html#L35">35</a></td></tr></table></div></div>
                   </div>
             </div>
           </div>

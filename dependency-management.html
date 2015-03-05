@@ -7,10 +7,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Christian Sterzl" />
     <meta name="Date-Revision-yyyymmdd" content="20150305" />
     <meta http-equiv="Content-Language" content="en" />
-    <title>Bit Twiddling Hacks &#x2013; Bit Twiddling Hacks</title>
+    <title>Bit Twiddling Hacks &#x2013; Project Dependency Management</title>
     <link rel="stylesheet" href="./css/apache-maven-fluido-1.3.1.min.css" />
     <link rel="stylesheet" href="./css/site.css" />
     <link rel="stylesheet" href="./css/print.css" media="print" />
@@ -19,7 +18,7 @@
     <script type="text/javascript" src="./js/apache-maven-fluido-1.3.1.min.js"></script>
 
     
-    <meta name="keyword" content="bit, java, hacks" />              </head>
+                  </head>
         <body class="topBarDisabled">
           
     
@@ -72,10 +71,12 @@
                 <ul class="nav nav-list">
                     <li class="nav-header">Overview</li>
                               
-      <li class="active">
+      <li>
   
-            <a href="#"><i class="none"></i>Introduction</a>
-          </li>
+                          <a href="index.html" title="Introduction">
+          <i class="none"></i>
+        Introduction</a>
+            </li>
                 
       <li>
   
@@ -121,12 +122,10 @@
         Dependency Information</a>
             </li>
                     
-      <li>
+      <li class="active">
   
-                          <a href="dependency-management.html" title="Dependency Management">
-          <i class="none"></i>
-        Dependency Management</a>
-            </li>
+            <a href="#"><i class="none"></i>Dependency Management</a>
+          </li>
                     
       <li>
   
@@ -135,10 +134,12 @@
         Distribution Management</a>
             </li>
                     
-      <li class="active">
+      <li>
   
-            <a href="#"><i class="none"></i>About</a>
-          </li>
+                          <a href="index.html" title="About">
+          <i class="none"></i>
+        About</a>
+            </li>
                     
       <li>
   
@@ -224,42 +225,86 @@
                 
         <div id="bodyColumn"  class="span9" >
                                   
-            <!-- Copyright (C) 2012-2015 Christian Sterzl <christian.sterzl@gmail.com>
-
-    This file is part of Bittwiddling.
-
-    Bittwiddling is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    Bittwiddling is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with Bittwiddling.  If not, see <http://www.gnu.org/licenses/>. -->
-    
-        
+            <div class="section">
+<h2><a name="Project_Dependency_Management"></a>Project Dependency Management</h2><a name="Project_Dependency_Management"></a>
 <div class="section">
-<h2><a name="About"></a>About</h2>
-        	
-<p>
-        	Java library for bit twiddling, mainly inspired by <a class="externalLink" href="http://graphics.stanford.edu/~seander/bithacks.html">Java library for bit twiddling, mainly inspired by http://graphics.stanford.edu/~seander/bithacks.html</a>.
-        	</p>
-        </div>
-        
+<h3><a name="compile"></a>compile</h3><a name="compile"></a>
+<p>The following is a list of compile dependencies in the DependencyManagement of this project. These dependencies can be included in the submodules to compile and run the submodule:</p>
+<table border="0" class="table table-striped">
+<tr class="a">
+<th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+<th>License</th></tr>
+<tr class="b">
+<td>com.google.guava</td>
+<td><a class="externalLink" href="http://code.google.com/p/guava-libraries/guava">guava</a></td>
+<td>18.0</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr>
+<tr class="a">
+<td>joda-time</td>
+<td><a class="externalLink" href="http://joda-time.sourceforge.net">joda-time</a></td>
+<td>1.2.1</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://www.apache.org/licenses/">Apache 2</a></td></tr>
+<tr class="b">
+<td>org.apache.commons</td>
+<td><a class="externalLink" href="http://commons.apache.org/proper/commons-lang/">commons-lang3</a></td>
+<td>3.3.2</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></td></tr></table></div>
 <div class="section">
-<h2><a name="New_Hacks"></a>New Hacks</h2>
-        	
-<p>
-        	If you need more features or see any bugs please report them at the github page 
-        	<a class="externalLink" href="https://github.com/Waxolunist/bittwiddling/issues">https://github.com/Waxolunist/bittwiddling/issues</a>.
-        	</p>
-        </div>
-    
-
+<h3><a name="test"></a>test</h3><a name="test"></a>
+<p>The following is a list of test dependencies in the DependencyManagement of this project. These dependencies can be included in the submodules to compile and run unit tests for the submodule:</p>
+<table border="0" class="table table-striped">
+<tr class="a">
+<th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+<th>License</th></tr>
+<tr class="b">
+<td>junit</td>
+<td><a class="externalLink" href="http://junit.org">junit</a></td>
+<td>4.12</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a></td></tr>
+<tr class="a">
+<td>org.hibernate</td>
+<td><a class="externalLink" href="http://validator.hibernate.org/hibernate-validator">hibernate-validator</a></td>
+<td>4.3.0.Final</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License, Version 2.0</a></td></tr>
+<tr class="b">
+<td>org.slf4j</td>
+<td><a class="externalLink" href="http://www.slf4j.org">slf4j-simple</a></td>
+<td>1.7.10</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></td></tr></table></div>
+<div class="section">
+<h3><a name="provided"></a>provided</h3><a name="provided"></a>
+<p>The following is a list of provided dependencies in the DependencyManagement of this project. These dependencies can be included in the submodules to compile the submodule, but should be provided by default when using the library:</p>
+<table border="0" class="table table-striped">
+<tr class="a">
+<th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+<th>License</th></tr>
+<tr class="b">
+<td>javax.validation</td>
+<td>validation-api</td>
+<td>1.0.0.GA</td>
+<td>jar</td>
+<td>license.txt</td></tr>
+<tr class="a">
+<td>org.projectlombok</td>
+<td><a class="externalLink" href="http://projectlombok.org">lombok</a></td>
+<td>1.16.2</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://projectlombok.org/LICENSE">The MIT License</a></td></tr></table></div></div>
                   </div>
             </div>
           </div>
