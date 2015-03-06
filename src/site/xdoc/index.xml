@@ -28,7 +28,7 @@
     <body>
         <section name="About">
         	<p>
-        	Java library for bit twiddling, mainly inspired by <a href="http://graphics.stanford.edu/~seander/bithacks.html">Java library for bit twiddling, mainly inspired by http://graphics.stanford.edu/~seander/bithacks.html</a>.
+        	Java library for mathematics and bit twiddling, mainly inspired by <a href="http://graphics.stanford.edu/~seander/bithacks.html">http://graphics.stanford.edu/~seander/bithacks.html</a>.
         	</p>
         </section>
         <section name="New Hacks">
